@@ -1,7 +1,10 @@
 # Aliases
 
 alias ls='ls -lsh --color=always'
-
+alias grep='grep --color=auto' # -n: with line number
+alias mkdir='mkdir -v -p'
+alias mv='mv -iv'
+alias rm='rm -iv --one-file-system'
 
 # Extract function
 extract(){
