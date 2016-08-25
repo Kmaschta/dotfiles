@@ -1,3 +1,9 @@
+install-console:
+	@bash ./install/console.sh
+
+install-heavy-clients:
+	@bash ./install/heavy_clients.sh
 
 install:
-	@bash ./install.sh
+	@make install-console
+	@make install-heavy-clients

@@ -2,7 +2,6 @@
 DIR="$HOME/.dotfiles"
 DIAG_SIZE="20 60"
 
-# Console
 CONSOLE_COMPONENTS="zsh rxvt-unicode-256color htop curl wget xsel ncdu xtrlock"
 
 if dialog --yesno "Install console components?\n\n$CONSOLE_COMPONENTS" $DIAG_SIZE; then
