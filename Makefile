@@ -1,3 +1,5 @@
+.PHONY: install install-console install-dev install-heavy-clients
+
 install-console:
 	@bash ./install/console.sh
 
