@@ -26,6 +26,11 @@ if dialog --yesno "Install console components?\n\n$CONSOLE_COMPONENTS" $DIAG_SIZ
   mkdir -vp "$HOME/.logs"
   ln -svi "$DIR/.bash_logs" $HOME
 
+  # Profile
+  echo "Installing profile"
+  cp -i "$DIR/.console_profile.dist" "$DIR/.console_profile"
+  ln -svi "$DIR/.console_profile" $HOME
+
   # zsh
   echo "Install ZSH and set it as default shell"
   wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | bash

@@ -78,7 +78,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 
 
 echo "Can you hear me now? Good."
-
-source $HOME/.env
-source $HOME/.aliases
-source $HOME/.bash_logs
+source $HOME/.console_profile

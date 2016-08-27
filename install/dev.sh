@@ -36,3 +36,9 @@ if dialog --yesno "Install atom?" $DIAG_SIZE; then
   sudo dpkg -i $ATOM_FILENAME
   rm $ATOM_FILENAME
 fi
+
+if dialog --yesno "Install node environment?" $DIAG_SIZE; then
+  NVM_VERSION="v0.31.6"
+  export PROFILE="$HOME/.console_profile"
+  curl -o- "https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh" | bash
+fi

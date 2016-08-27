@@ -1,0 +1,4 @@
+#!/bin/bash
+source $HOME/.env
+source $HOME/.aliases
+source $HOME/.bash_logs
