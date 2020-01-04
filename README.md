@@ -6,7 +6,7 @@ Feel free to take a look, fork or reuse at your own risk!
 
 # Install
 ```bash
-sudo apt install git
+sudo apt install git make dialog
 git clone git@github.com:Kmaschta/dotfiles.git ~/.dotfiles
 make install
 ```
