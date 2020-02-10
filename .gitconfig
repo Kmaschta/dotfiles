@@ -1,0 +1,12 @@
+[user]
+    email = kevin@marmelab.com
+    name = Kmaschta
+[push]
+    default = simple
+[core]
+    pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+    patch = !git --no-pager diff --no-color
+    l = !git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[commit]
+    gpgsign = true

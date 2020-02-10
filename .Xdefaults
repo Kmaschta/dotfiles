@@ -133,7 +133,7 @@
 
 ! Extensions
 URxvt.perl-lib: ~/.urxvt/ext/
-URxvt*.perl-ext-common: default,matcher,tabbed,clipboard
+URxvt*.perl-ext-common: default,matcher,tabbed,clipboard,resize-font
 
 ! Style
 URxvt*.scrollBar: false
