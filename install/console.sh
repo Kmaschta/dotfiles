@@ -36,6 +36,8 @@ if dialog --yesno "Install console components?\n\n$CONSOLE_COMPONENTS" $DIAG_SIZ
   wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | bash
   rm -vf "$HOME/.zshrc" && ln -svi "$DIR/.zshrc" $HOME
   chsh -s /usr/bin/zsh $USER
+
+  cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/wbingli/zsh-wakatime.git
 fi
 
 if dialog --yesno "Install vim?" $DIAG_SIZE; then

@@ -1,7 +1,7 @@
 The principal goal of this repository is to install and configure a workstation without spending four hours to its installation.
 I maintain my multiple configurations here as well.
 
-It was only created to run with Ubuntu 16.04 or Ubuntu GNOME 16.04.
+It was only created to run with Ubuntu 19.10.
 Feel free to take a look, fork or reuse at your own risk!
 
 # Install
