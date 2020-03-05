@@ -52,6 +52,11 @@ if dialog --yesno "Install vim?" $DIAG_SIZE; then
   vim +PluginInstall +qall
 fi
 
+if dialog --yesno "Install HTTPie?" $DIAG_SIZE; then
+  sudo snap install http
+fi
+
 if dialog --yesno "Logout session?\n\nIt is strongly recommanded in order to reset shell config." $DIAG_SIZE; then
   gnome-session-quit --no-prompt
 fi
+

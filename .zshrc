@@ -85,4 +85,4 @@ source $HOME/.console_profile
 echo "Good."
 coinmon -f BTC,LTC,ETH
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/snap/bin:$PATH"
