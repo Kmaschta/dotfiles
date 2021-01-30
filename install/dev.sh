@@ -7,7 +7,7 @@ if dialog --yesno "Install docker?" $DIAG_SIZE; then
   sudo apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   sudo apt-key fingerprint 0EBFCD88
-  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu eoan test"
+  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
   sudo apt update
   sudo apt install docker-ce docker-ce-cli containerd.io
 
@@ -16,19 +16,19 @@ if dialog --yesno "Install docker?" $DIAG_SIZE; then
 fi
 
 if dialog --yesno "Install docker-compose?" $DIAG_SIZE; then
-  DOCKER_COMPOSE_VERSION="1.25.3"
+  DOCKER_COMPOSE_VERSION="1.28.2"
   sudo curl -L "https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
   sudo chmod +x /usr/local/bin/docker-compose
 fi
 
 if dialog --yesno "Install node environment?" $DIAG_SIZE; then
-  NVM_VERSION="v0.35.2"
+  NVM_VERSION="v0.37.2"
   export PROFILE="$HOME/.console_profile"
   curl -o- "https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh" | bash
 
   source ~/.zshrc
-  nvm install 12
-  nvm alias default 12
+  nvm install 14
+  nvm alias default 14
   nvm use default
 
   # Install commonly used node packages
