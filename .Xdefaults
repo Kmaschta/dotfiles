@@ -172,3 +172,7 @@ URxvt*.colorUL: #4682B4
 URxvt*.iso14755: False
 URxvt*.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt*.keysym.Shift-Control-V: perl:clipboard:paste
+
+
+
+URxvt*saveLines: 200000

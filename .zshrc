@@ -82,7 +82,9 @@ export PATH=$PATH:$GOPATH/bin
 
 echo "Can you hear me now?"
 source $HOME/.console_profile
-echo "Good."
-coinmon -f BTC,LTC,ETH
+#coinmon -f BTC,LTC,ETH
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/snap/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/snap/bin:$PATH"
+
+echo "Good."
