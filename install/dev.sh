@@ -16,13 +16,13 @@ if dialog --yesno "Install docker?" $DIAG_SIZE; then
 fi
 
 if dialog --yesno "Install docker-compose?" $DIAG_SIZE; then
-  DOCKER_COMPOSE_VERSION="1.28.2"
+  DOCKER_COMPOSE_VERSION="v2.2.3"
   sudo curl -L "https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
   sudo chmod +x /usr/local/bin/docker-compose
 fi
 
 if dialog --yesno "Install node environment?" $DIAG_SIZE; then
-  NVM_VERSION="v0.37.2"
+  NVM_VERSION="v0.39.1"
   export PROFILE="$HOME/.console_profile"
   curl -o- "https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh" | bash
 
@@ -32,7 +32,7 @@ if dialog --yesno "Install node environment?" $DIAG_SIZE; then
   nvm use default
 
   # Install commonly used node packages
-  npm install -g coinmon diff-so-fancy 
+  npm install -g diff-so-fancy 
 fi
 
 if dialog --yesno "Install yarn?" $DIAG_SIZE; then

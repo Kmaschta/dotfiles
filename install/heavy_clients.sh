@@ -6,7 +6,7 @@ if dialog --yesno "Install spotify?" $DIAG_SIZE; then
 fi
 
 if dialog --yesno "Install chromium?" $DIAG_SIZE; then
-  sudo snap install chromium
+  sudo apt-get install chromium-browser
 fi
 
 if dialog --yesno "Install slack?" $DIAG_SIZE; then
