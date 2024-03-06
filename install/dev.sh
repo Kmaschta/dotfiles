@@ -15,20 +15,14 @@ if dialog --yesno "Install docker?" $DIAG_SIZE; then
   sudo usermod -aG docker $USER
 fi
 
-if dialog --yesno "Install docker-compose?" $DIAG_SIZE; then
-  DOCKER_COMPOSE_VERSION="v2.2.3"
-  sudo curl -L "https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-  sudo chmod +x /usr/local/bin/docker-compose
-fi
-
 if dialog --yesno "Install node environment?" $DIAG_SIZE; then
-  NVM_VERSION="v0.39.1"
+  NVM_VERSION="v0.39.7"
   export PROFILE="$HOME/.console_profile"
   curl -o- "https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh" | bash
 
   source ~/.zshrc
-  nvm install 14
-  nvm alias default 14
+  nvm install 20
+  nvm alias default 20
   nvm use default
 
   # Install commonly used node packages
@@ -42,6 +36,7 @@ if dialog --yesno "Install yarn?" $DIAG_SIZE; then
   sudo apt update
   sudo apt install --no-install-recommends yarn
 fi
+
 
 if dialog --yesno "Install VS Code?" $DIAG_SIZE; then
   sudo snap install code --classic
